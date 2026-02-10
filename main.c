@@ -89,8 +89,8 @@ int main() {
         printf("\n--- STUDENT MANAGER ---\n");
         printf("1. Add student\n");
         printf("2. Show students\n");
-        printf("3. Find student (by name)\n");
-        printf("4. Delete student (by name)\n");
+        printf("3. Find student\n");
+        printf("4. Delete student\n");
         printf("0. Exit\n");
         printf("Option: ");
         scanf("%d", &opt);
@@ -107,7 +107,7 @@ int main() {
                 ReadStudent(&lista[n - 1]);
                 printf("Added.\n");
             } else {
-                printf("Could not add (allocation failed).\n");
+                printf("Could not add.\n");
             }
         }
         else if (opt == 2) {
@@ -143,7 +143,7 @@ int main() {
             }
         }
         else {
-            printf("Invalid option.\n");
+            printf("Error!\n");
         }
     }
 
